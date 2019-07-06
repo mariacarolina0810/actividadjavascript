@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeros=0
+        var contador1=0, contador2=0
+        while (numeros!=999) {
+        numeros=parseInt(window.prompt("Ingrese un número"));
+        if(numeros>0){
+            contador1++
+        } else{
+             contador2++
+         }
+     }
+     document.write("<p> Los números positivos son: </p>"+contador1);
+     document.write("<p> Los números negativos son: </p>"+contador2)   
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var vector=[];
+        var n=0;
+        var num=0;
+        var contador=0;
+        n= parseInt(window.prompt("Digite cuantas posiciones tendra el vector"));
+        for(i=1;i<=n; i++){
+            num =window.prompt("Ingrese un numero");
+            vector[i] = num;
+        } 
+        for(i=1;i<=n; i++){
+            if (i%2 > 0){
+                if(vector[i]%2 == 0){
+                    contador++;
+                }
+            }
+        }
+        document.write ("<p>Se encontraron "+contador+" pares en posiciones impares</p>");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var opcion = true;
+        var contador1=0
+        var contador2=0
+        var peso=0
+        while (opcion) {
+        var peso = parseInt(window.prompt("Digite el peso (digite 0 para salir): "));
+        if(peso>80){
+          contador1 ++;
+        }
+        else if(peso<80 && peso>0){
+                contador2++;
+            }
+            else if (peso == 0){
+                opcion=false;
+            }
+        }
+
+        document.write("<p>Usted digitó: "+contador1+" pesos mayores a 80Kg</p>");
+        document.write("<p>Usted digitó: "+contador2+" pesos menores a 80Kg</p>");
+                   
+    
+    </script>
+</body>
+</html>
+

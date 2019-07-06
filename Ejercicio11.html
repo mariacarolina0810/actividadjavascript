@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [];
+        var Num=0
+        var contador1=0, contador2=0
+        var x =parseInt(window.prompt("Ingrese el tamaño del vector"));
+        
+        for(i=0;i<x; i++){
+            Num = parseInt(window.prompt("Digite un número"));
+            array[i] = Num;
+        }
+
+        for(j=0;j<array.length; j++){
+            if (array[j]%2==0){
+             contador1++
+            } else {
+             contador2++
+        }
+    }
+          
+    document.write("<p> Los números pares son: </p>"+contador1);
+    document.write("<p> Los números impares son: <p/>"+contador2)    
+
+        </script>
+</body>
+</html>

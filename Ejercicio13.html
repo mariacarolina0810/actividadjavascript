@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ciruclo
+    var rectangulo
+    var triangulo
+    var opcion
+    
+    function menu(){
+            var mostrarmenu=`
+            Digite 1 para el área del círculo.
+            Digite 2 para el área del rectángulo.
+            Digite 3 para el área del triángulo.
+            Digite su opción:
+            `
+            return mostrarmenu;
+        }
+        var opcion = parseInt(window.prompt(menu()));
+    
+    switch (opcion) {
+            case 1:
+            var radio = parseFloat(window.prompt("Digite el radio del círculo:"));
+            var ciruclo= Math.PI * Math.pow(radio, 2);
+            document.write("El área de su círculo es: "+ciruclo);
+                
+                break;
+            case 2:
+            var base = parseFloat(window.prompt("Digite la base de su rectángulo:"));
+            var height = parseFloat(window.prompt("Digite la altura de su rectángulo:"));
+            var rectangulo= base * height;
+            document.write("El área de su rectángulo es: "+rectangulo);
+                
+                break;
+            case 3:
+            var base = parseFloat(window.prompt("Digite la base de su rectángulo:"));
+            var height = parseFloat(window.prompt("Digite la altura de su rectángulo:"));
+            var triangulo= (base * height)/2;
+            document.write("El área de su triángulo es: "+triangulo);
+                
+                break;
+            default:
+                break;
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

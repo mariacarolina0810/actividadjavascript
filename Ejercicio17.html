@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var array = [8];
+        var palabra;
+        palabra = window.prompt("Ingrese un texto");
+        if(palabra.length ==8){
+            for(i=0;i<8; i++){
+                array[i] = palabra[i];
+            }
+            for(i=0;i<8; i++){
+                if(array[i].toLowerCase() == "a"){
+                    console.log("aca ");
+                    array[i] ="4";
+                }
+                else if(array[i].toLowerCase() == "e"){
+                    array[i] = "3";
+                }
+            }
+            document.write("La palabra cambiada es: "+array[0]+array[1]+array[2]+array[3]+array[4]+array[5]+array[6]+array[7]);
+        }
+        else{
+            document.write("La palabra ingresada no es valida, la cantidad  de caracteres permitidos es 8")
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var costoT;
+    var descuento;
+    var PrecioFinal;
+
+    costoT=window.prompt("Digite el precio del traje");
+    if(costoT>=150000){
+         descuento=0.15;
+        }
+        else{
+        descuento=0.08;
+        }
+         PrecioFinal = costoT - (costoT*descuento);
+    document.write ("<p>El porcentaje aplicado es: "+descuento*100+"%</p>");
+    document.write ("<p>El valor total es: "+costoT+"$</p>");
+    document.write ("<p>El precio final es: "+PrecioFinal+"$</p>");
+    
+    
+    </script>
+</body>
+</html>

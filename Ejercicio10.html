@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Mayor=0, Menor=0, Num=0;
+        for(i=0; i<10; i++){
+            Num = parseInt(window.prompt("Digite un número"));
+            if(Num > 0){
+                Mayor++;
+            }else if(Num <0){
+                Menor++;
+            }
+        }
+
+        document.write("<p>Usted digitó " +Mayor+ " números mayores a 0.</p>");
+        document.write("<p>Usted digitó " +Menor+" números menores a 0.</p>")
+    </script>
+</body>
+</html>

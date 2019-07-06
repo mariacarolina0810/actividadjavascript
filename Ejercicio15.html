@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   
+   var array=[];
+   var array2=[];
+   var num=0
+   var contador=0
+
+   for(i=0;i<10; i++){
+    num = parseInt(window.prompt("Digite un número"));
+    array[i] = num;
+    }
+    for(i=0;i<2; i++){
+    num = parseInt(window.prompt("Ahora digita un numero para saber si esta dentro de los elementos del vector"));
+    array2[i] = num;
+    }
+    for(i=0;i<array2.length;i++){
+        for(j=0;j<array.length;i++){
+        if (array2[i]==array[j]){
+            contador++
+        }
+         
+        }
+    }
+    document.write("<p> De los dos ultimoa numeros ingresados "+contador+ "se encuentran dentro de los elementos del vector")
+   </script> 
+</body>
+</html>

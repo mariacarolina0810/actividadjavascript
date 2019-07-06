@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero= parseInt(prompt("Digite un numero"))
+        var multiplicacion=0
+        document.write("<p> la tabla de multiplicar del numero "+numero+" es:</p>");
+        if(numero>0){
+            for(i=1;i<=10;i++){
+                multiplicacion = numero*i;
+                document.write("<p>"+numero+" x "+i+" = "+multiplicacion+"</p>");
+            }
+        }
+        else{
+            alert("error ingrese un numero mayor que 0");
+        }
+        
+        
+            
+    </script>
+</body>
+</html>
